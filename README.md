@@ -11,18 +11,18 @@ O projeto aplica conceitos de Engenharia de Dados, ETL, Análise Exploratória d
 > Adicione aqui uma imagem do dashboard após a publicação.
 
 ```markdown
-![Dashboard](imagens/dashboard.png)
+<img width="1590" height="650" alt="image" src="https://github.com/user-attachments/assets/ccbe5a9f-dc02-4d62-8f16-0a29ea79d8f1" />
+
 ```
 
 ---
 
 ##  Aplicação Online
 
-> Adicione aqui o link da aplicação após a publicação.
 
 ```text
 https://SEU-LINK.streamlit.app
-```
+```](https://lucasvieira757-joao-fonseca-dashboard-app-svaoqw.streamlit.app/)
 
 ---
 
