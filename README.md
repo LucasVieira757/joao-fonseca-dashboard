@@ -141,3 +141,6 @@ Este projeto permitiu aplicar conceitos de:
 Lucas Vieira
 
 Projeto desenvolvido para fins de estudo, portfólio e evolução técnica em Análise de Dados, Python e Data Visualization.
+
+<img width="1157" height="735" alt="image" src="https://github.com/user-attachments/assets/c323858e-6b59-4b7e-a673-14e16c627d4e" />
+
