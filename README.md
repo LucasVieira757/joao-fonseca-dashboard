@@ -1,41 +1,60 @@
-# 🎾 João Fonseca Performance Center
+#  João Fonseca Performance Center
 
-Plataforma de análise esportiva desenvolvida em Python para monitorar a evolução da carreira do tenista João Fonseca através de dados históricos de partidas.
+Plataforma de análise esportiva desenvolvida em Python para acompanhar a evolução da carreira do tenista João Fonseca através de dados históricos de partidas ATP.
 
-O projeto utiliza técnicas de Engenharia de Dados, Análise Exploratória, Visualização de Dados e Storytelling para transformar dados brutos em insights acionáveis sobre desempenho, evolução competitiva e perfil esportivo.
+O projeto aplica conceitos de Engenharia de Dados, ETL, Análise Exploratória de Dados (EDA), Storytelling e Data Visualization para transformar dados esportivos em insights acionáveis.
+
+---
+
+##  Dashboard
+
+> Adicione aqui uma imagem do dashboard após a publicação.
+
+```markdown
+![Dashboard](imagens/dashboard.png)
+```
+
+---
+
+##  Aplicação Online
+
+> Adicione aqui o link da aplicação após a publicação.
+
+```text
+https://SEU-LINK.streamlit.app
+```
 
 ---
 
 ##  Objetivo
 
-Criar uma plataforma analítica capaz de responder perguntas como:
+Responder perguntas relevantes sobre a evolução competitiva de João Fonseca:
 
-* Como João Fonseca evoluiu ao longo dos anos?
-* Em quais pisos apresenta melhor desempenho?
-* Como performa contra adversários de diferentes níveis?
-* Qual foi sua melhor vitória da carreira?
-* Quais são seus principais pontos fortes e oportunidades de melhoria?
-
-O foco não é apenas exibir dados, mas gerar conclusões que apoiem a tomada de decisão.
+* Como seu desempenho evoluiu ao longo dos anos?
+* Qual é seu melhor piso?
+* Qual é sua taxa de vitória por categoria de torneio?
+* Como performa contra adversários Top 50 e Top 100?
+* Quais são suas melhores vitórias da carreira?
+* Onde estão suas principais oportunidades de evolução?
 
 ---
 
-##  Funcionalidades
+##  Principais Funcionalidades
 
 ### Coleta de Dados
 
-* Extração automática de partidas ATP
-* Consolidação de múltiplas temporadas
+* Extração de partidas ATP
+* Consolidação de temporadas
 * Construção de base histórica
 
 ### Tratamento de Dados
 
-* Padronização de resultados
 * Identificação automática de adversários
-* Classificação de ranking
+* Classificação por ranking
 * Categorização de torneios
+* Padronização dos resultados
 
-### Dashboard Interativo
+### Dashboard Analítico
 
 * Evolução da carreira
 * Desempenho por piso
@@ -48,12 +67,12 @@ O foco não é apenas exibir dados, mas gerar conclusões que apoiem a tomada de
 * Melhor piso
 * Pior piso
 * Melhor vitória da carreira
-* Aproveitamento contra Top 50 e Top 100
-* Identificação de tendências de desempenho
+* Taxa de vitória contra Top 50 e Top 100
+* Identificação de padrões de desempenho
 
 ---
 
-##  Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 
 * Python
 * Pandas
@@ -74,6 +93,14 @@ joao-fonseca-performance-center
 ├── tratamento_historico.py
 ├── analise_historica.py
 │
+├── main.py
+├── analise_joao.py
+├── dashboard_data.py
+│
+├── joao_fonseca_partidas.xlsx
+├── joao_fonseca_partidas_tratado.xlsx
+├── joao_fonseca_partidas_analisada.xlsx
+│
 ├── joao_fonseca_historico_bruto.xlsx
 ├── joao_fonseca_historico_tratado.xlsx
 ├── joao_fonseca_relatorio_historico.xlsx
@@ -82,17 +109,35 @@ joao-fonseca-performance-center
 └── README.md
 ```
 
+### Fluxo de Construção
+
+O projeto foi desenvolvido de forma incremental:
+
+1. Coleta dos dados ATP
+2. Tratamento e padronização
+3. Construção da base histórica
+4. Análises exploratórias
+5. Geração de relatórios
+6. Desenvolvimento do dashboard interativo em Streamlit
+
+Os arquivos intermediários foram mantidos no repositório para documentar a evolução do projeto e servir como material de estudo e consulta.
+
+```
+```
+
+```
+
 ---
 
 ##  Como Executar
 
-### Instalar dependências
+Instale as dependências:
 
 ```bash
 py -m pip install -r requirements.txt
 ```
 
-### Executar dashboard
+Execute o dashboard:
 
 ```bash
 py -m streamlit run app.py
@@ -104,35 +149,33 @@ py -m streamlit run app.py
 
 Com base nos dados históricos analisados:
 
-* Melhor desempenho em quadras Hard
-* Aproveitamento geral superior a 60%
-* Maior dificuldade contra adversários de elite
-* Performance mais consistente em pisos rápidos
-* Gramado identificado como principal oportunidade de evolução
+* Melhor desempenho em quadras Hard.
+* Aproveitamento geral superior a 60%.
+* Redução de desempenho contra adversários de elite.
+* Maior consistência em pisos rápidos.
+* Gramado identificado como principal oportunidade de evolução.
 
 ---
 
-## Aprendizados do Projeto
-
-Este projeto permitiu aplicar conceitos de:
+##  Conceitos Aplicados
 
 * ETL (Extract, Transform, Load)
 * Engenharia de Dados
-* Manipulação de dados com Pandas
-* Visualização de Dados
+* Análise Exploratória de Dados (EDA)
 * Storytelling com Dados
+* Data Visualization
 * Desenvolvimento de Dashboards
 * Análise Esportiva
 
 ---
 
-##  Próximos Passos
+##  Próximas Evoluções
 
-* Inclusão de dados Challenger e ITF
-* Integração com rankings ATP atualizados
-* Modelos preditivos de vitória
-* Análise de desempenho por adversário
-* Machine Learning aplicado ao scouting esportivo
+* Inclusão de torneios Challenger e ITF.
+* Integração com rankings ATP atualizados.
+* Modelos preditivos de desempenho.
+* Machine Learning aplicado ao scouting esportivo.
+* Análise detalhada por adversário.
 
 ---
 
@@ -140,7 +183,4 @@ Este projeto permitiu aplicar conceitos de:
 
 Lucas Vieira
 
-Projeto desenvolvido para fins de estudo, portfólio e evolução técnica em Análise de Dados, Python e Data Visualization.
-
-<img width="1157" height="735" alt="image" src="https://github.com/user-attachments/assets/c323858e-6b59-4b7e-a673-14e16c627d4e" />
-
+Projeto desenvolvido para estudo, portfólio e evolução técnica em Python, Análise de Dados e Visualização de Dados.
